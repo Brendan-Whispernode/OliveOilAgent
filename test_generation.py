@@ -13,10 +13,10 @@ def test_generation():
         recipe_data = recipe_generator.generate_recipe()
         logger.info(f"Successfully generated recipe: {recipe_data['title']}")
         
-        # Test image generation
+        # Test image generation with recipe data
         logger.info("Starting image generation...")
         image_generator = ImageGenerator()
-        image_path = image_generator.generate_image(recipe_data['title'])
+        image_path = image_generator.generate_image(recipe_data['title'], recipe_data)
         logger.info(f"Successfully generated image: {image_path}")
         
         return recipe_data, image_path
