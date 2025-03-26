@@ -1,0 +1,14 @@
+{
+  "name": "reve-image-service",
+  "version": "1.0.0",
+  "description": "Image generation service using REVE",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "reve-sdk": "github:FlintSH/reve-sdk",
+    "dotenv": "^16.0.3"
+  }
+} 
