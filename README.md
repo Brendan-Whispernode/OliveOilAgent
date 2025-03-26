@@ -14,9 +14,9 @@ An automated system that generates recipe blog posts using AI, featuring special
 1. Clone the repository
 2. Install dependencies:
 
-pip install -r requirements.txt
-cd image_service
-npm install
+```pip install -r requirements.txt```
+```cd image_service```
+```npm install```
 
 3. Create a .env file with your credentials:
 
@@ -40,21 +40,19 @@ To get the REVE credentials:
 
 Start the image generation service:
 
-bash
-cd image_service
-npm start
+```cd image_service```
+```npm start```
 
 Start the main application (in a new terminal):
 
-bash
-python main.py
+```python main.py```
 
 
 ## Directory Structure
 
-- main.py # Main orchestration script
-generate_recipe.py # Recipe generation logic
-generate_image.py # Image generation using REVE
+- main.py # Main orchestration script /n
+generate_recipe.py # Recipe generation logic /n
+generate_image.py # Image generation using REVE /n
 post_to_blog.py # Shopify blog posting
 - image_service/ # REVE image generation service
 - server.js # Image service main server
