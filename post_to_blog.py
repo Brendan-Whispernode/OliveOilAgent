@@ -104,6 +104,9 @@ class ShopifyPoster:
             str: URL of the created blog post
         """
         try:
+            # Remove any duplicate h1 tags from the content
+            content = re.sub(r'<h1>.*?</h1>\s*<h1>', '<h1>', content)
+            
             # Clean the HTML content
             content = self._clean_html_content(content)
             
